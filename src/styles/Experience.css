@@ -1,0 +1,57 @@
+#Employment {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  flex-direction: column;
+}
+
+.tableHead {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Style for individual experience items */
+.experience-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%; /* Allow items to take full width */
+  max-width: 800px; /* Optional: Add max width for better readability */
+}
+
+.experience-item h3 {
+  color: #2980b9;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.experience-item h4 {
+  color: #34495e;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience-item p strong {
+  font-weight: bold;
+  color: #16a085;
+}
+
+.experience-item div {
+  margin-top: 10px;
+}
+
+.experience-item p {
+  margin-bottom: 5px;
+}
