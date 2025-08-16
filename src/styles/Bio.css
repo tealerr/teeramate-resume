@@ -45,6 +45,10 @@
 
 .bio-header {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .bio-name {
@@ -54,6 +58,63 @@
   margin: 0;
   letter-spacing: -0.02em;
   line-height: 1.2;
+  text-align: center;
+}
+
+.bio-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color, #007bff);
+  margin: 0;
+  text-align: center;
+}
+
+[data-theme="dark"] .bio-title {
+  color: var(--primary-color-dark, #0d6efd);
+}
+
+.bio-description {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary, #6c757d);
+  text-align: center;
+  margin: 0 0 25px 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .bio-description {
+  color: var(--text-color-secondary-dark, #adb5bd);
+}
+
+.bio-degree {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary, #6c757d);
+  margin: 0;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .bio-degree {
+  color: var(--text-color-secondary-dark, #adb5bd);
+}
+
+.bio-degree strong {
+  color: var(--text-color, #333);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .bio-degree strong {
+  color: var(--text-color-dark, #ffffff);
+}
+
+.loading-spinner {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color-secondary, #6c757d);
+  padding: 40px;
+}
+
+[data-theme="dark"] .loading-spinner {
+  color: var(--text-color-secondary-dark, #adb5bd);
 }
 
 [data-theme="dark"] .bio-name {

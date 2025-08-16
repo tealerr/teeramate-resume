@@ -42,10 +42,16 @@ function TopNavbar() {
               Bio
             </Nav.Link>
             <Nav.Link
+              href="#skills"
+              onClick={(e) => handleSmoothScroll(e, "skills")}
+            >
+              Skills
+            </Nav.Link>
+            <Nav.Link
               href="#experience"
               onClick={(e) => handleSmoothScroll(e, "experience")}
             >
-              Work Experience
+              Experience
             </Nav.Link>
           </Nav>
           <Nav>

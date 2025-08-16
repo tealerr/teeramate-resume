@@ -1,9 +1,19 @@
 import React from "react";
-import useExperienceData from "../state/experienceState";
+import { useExperiences } from "../hooks/usePersonalData";
 import "../styles/Experience.css";
 
 const Experience: React.FC = () => {
-  const [experiences] = useExperienceData();
+  const { experiences, loading } = useExperiences();
+
+  if (loading) {
+    return (
+      <section id="experience" className="experience-section">
+        <div className="container">
+          <div className="loading-spinner">Loading experiences...</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="experience" className="experience-section">
@@ -14,23 +24,43 @@ const Experience: React.FC = () => {
         </div>
 
         <div className="experience-timeline">
-          {experiences.map((experience, index) => (
-            <div className="experience-item" key={index}>
+          {experiences.map((experience) => (
+            <div className="experience-item" key={experience.id}>
               <div className="experience-marker"></div>
               <div className="experience-content">
-                <h3 className="company-name">{experience.Company}</h3>
-                <h4 className="job-title">{experience.JobName}</h4>
+                <h3 className="company-name">{experience.company}</h3>
+                <h4 className="job-title">{experience.position}</h4>
                 <p className="duration">
                   <strong>
-                    {experience.StartDate} - {experience.EndDate}
+                    {experience.startDate} - {experience.endDate}
                   </strong>
+                  {experience.location && (
+                    <span className="location"> • {experience.location}</span>
+                  )}
                 </p>
+                {experience.description && (
+                  <p className="job-description">{experience.description}</p>
+                )}
                 <div className="job-details">
-                  {experience.Detail.split("\n").map(
-                    (detail, detailIndex) =>
-                      detail.trim() && <p key={detailIndex}>{detail}</p>
+                  {experience.responsibilities.map(
+                    (responsibility, index) =>
+                      responsibility.trim() && (
+                        <p key={index}>{responsibility}</p>
+                      )
                   )}
                 </div>
+                {experience.technologies.length > 0 && (
+                  <div className="technologies">
+                    <strong>Technologies:</strong>
+                    <div className="tech-tags">
+                      {experience.technologies.map((tech, index) => (
+                        <span key={index} className="tech-tag">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

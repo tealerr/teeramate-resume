@@ -1,0 +1,187 @@
+{
+    "personal": {
+        "name": "Teeramate Kantima",
+        "title": "Full Stack Developer",
+        "bio": "Passionate software engineer specializing in modern web technologies and cloud solutions",
+        "profileImage": "/profile.jpg",
+        "contact": {
+            "email": "teeramate.kan@gmail.com",
+            "phone": "+66 XX XXX XXXX",
+            "location": "Bangkok, Thailand",
+            "linkedin": "https://linkedin.com/in/teeramate",
+            "github": "https://github.com/tealerr"
+        }
+    },
+    "education": {
+        "field": "Engineering and Technology | Digital Information and Technology (DIT)",
+        "institution": "Panyapiwat Institute of Management",
+        "institutionAbbr": "PIM",
+        "institutionUrl": "https://pim.ac.th/",
+        "degree": "Bachelor's Degree",
+        "status": "Current Student",
+        "graduationYear": "2024"
+    },
+    "skills": {
+        "languages": [
+            "TypeScript",
+            "JavaScript",
+            "C#",
+            "Python",
+            "Go"
+        ],
+        "frontend": [
+            "React",
+            "Next.js",
+            "Vue.js",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "Bootstrap"
+        ],
+        "backend": [
+            "Node.js",
+            "ASP.NET Core",
+            "Express.js",
+            "RESTful APIs",
+            "GraphQL"
+        ],
+        "database": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Cosmos DB"
+        ],
+        "cloud": [
+            "Azure",
+            "Azure Functions",
+            "Azure Container Apps",
+            "Azure DevOps",
+            "Docker"
+        ],
+        "tools": [
+            "Git",
+            "VS Code",
+            "Postman",
+            "Jest",
+            "Robot Framework"
+        ]
+    },
+    "experiences": [
+        {
+            "id": 1,
+            "company": "Amity Solutions Co., Ltd",
+            "position": "Full Stack Engineer",
+            "location": "Bangkok, Thailand",
+            "startDate": "August 2024",
+            "endDate": "February 2025",
+            "current": false,
+            "description": "Developed scalable web applications and AI-powered solutions using modern technologies.",
+            "responsibilities": [
+                "Developed a real-time chatbot system with scalable backend architecture using Node.js and TypeScript, enabling seamless AI-user communication via streaming chat with efficient data processing and responsive user experiences.",
+                "Designed system architectures and created technical specifications for projects, focusing on scalability, efficiency, and clear implementation guidelines while continuously improving technical skills.",
+                "Designed and fine-tuned advanced AI prompts while creating scalable and efficient knowledge bases using OpenAI GPT, improving accuracy and enhancing user interactions.",
+                "Architected and deployed cloud-based solutions with Azure services, leveraging Function Apps for serverless workflows, Queues for message handling, Cosmos DB for scalable databases, and monitoring tools for diagnostics and system health."
+            ],
+            "technologies": [
+                "Node.js",
+                "TypeScript",
+                "Azure",
+                "OpenAI GPT",
+                "Cosmos DB",
+                "Function Apps"
+            ]
+        },
+        {
+            "id": 2,
+            "company": "Choco Card Enterprise Co., Ltd.",
+            "position": "Back End Developer",
+            "location": "Bangkok, Thailand",
+            "startDate": "April 2024",
+            "endDate": "August 2024",
+            "current": false,
+            "description": "Developed backend systems for CRM and loyalty programs integrated with LINE Official Account.",
+            "responsibilities": [
+                "Developing RESTful APIs using C# ASP.NET Core framework to facilitate communication between the frontend and backend components.",
+                "Developing and managing CRM web applications on the LINE OA incorporating features like campaign management, point redemption, and reward collection into the platform."
+            ],
+            "technologies": [
+                "C#",
+                "ASP.NET Core",
+                "RESTful APIs",
+                "LINE OA",
+                "CRM Systems"
+            ]
+        },
+        {
+            "id": 3,
+            "company": "Ascend Group Co., Ltd.",
+            "position": "Software Engineer Intern",
+            "location": "Bangkok, Thailand",
+            "startDate": "June 2023",
+            "endDate": "February 2024",
+            "current": false,
+            "description": "Contributed to the development of financial applications and automated testing systems.",
+            "responsibilities": [
+                "Interned as a Software Engineer, actively contributing to the development of a mutual fund application on the True Money Wallet platform.",
+                "Contributed to the establishment of automated tests using the Robot Framework, ensuring the application's reliability and performance.",
+                "Enhanced testing coverage through the incorporation of unit tests with Jest and Gotest.",
+                "Contributed significantly to the development of API functionalities using RestFulAPI to support microservices architecture."
+            ],
+            "technologies": [
+                "Robot Framework",
+                "Jest",
+                "Go",
+                "RESTful APIs",
+                "Microservices",
+                "Testing"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Real-time Chatbot System",
+            "description": "AI-powered chatbot with streaming capabilities and scalable backend architecture",
+            "technologies": [
+                "Node.js",
+                "TypeScript",
+                "OpenAI",
+                "Azure"
+            ],
+            "status": "Completed",
+            "year": "2024"
+        },
+        {
+            "id": 2,
+            "name": "CRM Web Application",
+            "description": "Customer relationship management system integrated with LINE Official Account",
+            "technologies": [
+                "C#",
+                "ASP.NET Core",
+                "LINE OA"
+            ],
+            "status": "Completed",
+            "year": "2024"
+        },
+        {
+            "id": 3,
+            "name": "Mutual Fund Application",
+            "description": "Financial application for True Money Wallet platform with automated testing",
+            "technologies": [
+                "Robot Framework",
+                "Jest",
+                "Go",
+                "Microservices"
+            ],
+            "status": "Completed",
+            "year": "2023-2024"
+        }
+    ],
+    "social": {
+        "github": "https://github.com/tealerr",
+        "linkedin": "https://linkedin.com/in/teeramet",
+        "twitter": "",
+        "portfolio": ""
+    }
+}

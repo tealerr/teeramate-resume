@@ -4,6 +4,7 @@ import "./styles/global.css";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import TopNavbar from "./components/Navbar";
 import AboutMe from "./components/Bio";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import BackToTop from "./components/BackToTop";
 
@@ -14,6 +15,7 @@ function App() {
         <TopNavbar />
         <main className="main-content">
           <AboutMe />
+          <Skills />
           <Experience />
         </main>
         <BackToTop />
