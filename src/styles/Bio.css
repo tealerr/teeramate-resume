@@ -1,0 +1,176 @@
+.bio-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--bg-color, #ffffff) 0%, var(--bg-color-secondary, #f8f9fa) 100%);
+}
+
+[data-theme="dark"] .bio-section {
+  background: linear-gradient(135deg, var(--bg-color-dark, #121212) 0%, var(--bg-color-secondary-dark, #1e1e1e) 100%);
+}
+
+.bio-content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  background: var(--card-bg, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px var(--shadow, rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .bio-content {
+  background: var(--card-bg-dark, #1e1e1e);
+  box-shadow: 0 20px 40px var(--shadow-dark, rgba(0, 0, 0, 0.3));
+}
+
+.bio-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color, #007bff), var(--info-color, #17a2b8), var(--success-color, #28a745));
+}
+
+[data-theme="dark"] .bio-content::before {
+  background: linear-gradient(90deg, var(--primary-color-dark, #0d6efd), var(--info-color, #17a2b8), var(--success-color, #28a745));
+}
+
+.bio-header {
+  margin-bottom: 30px;
+}
+
+.bio-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color, #333);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .bio-name {
+  color: var(--text-color-dark, #ffffff);
+}
+
+.bio-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color, #007bff), var(--info-color, #17a2b8));
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+[data-theme="dark"] .bio-divider {
+  background: linear-gradient(90deg, var(--primary-color-dark, #0d6efd), var(--info-color, #17a2b8));
+}
+
+.bio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bio-field,
+.bio-institution {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary, #6c757d);
+  margin: 0;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .bio-field,
+[data-theme="dark"] .bio-institution {
+  color: var(--text-color-secondary-dark, #adb5bd);
+}
+
+.bio-field strong,
+.bio-institution strong {
+  color: var(--text-color, #333);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .bio-field strong,
+[data-theme="dark"] .bio-institution strong {
+  color: var(--text-color-dark, #ffffff);
+}
+
+.bio-link {
+  color: var(--primary-color, #007bff);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+[data-theme="dark"] .bio-link {
+  color: var(--primary-color-dark, #0d6efd);
+}
+
+.bio-link:hover {
+  color: var(--primary-color-hover, #0056b3);
+  text-decoration: none;
+}
+
+[data-theme="dark"] .bio-link:hover {
+  color: var(--primary-color-dark-hover, #0b5ed7);
+}
+
+.bio-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-color, #007bff);
+  transition: width 0.3s ease;
+}
+
+[data-theme="dark"] .bio-link::after {
+  background-color: var(--primary-color-dark, #0d6efd);
+}
+
+.bio-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bio-section {
+    padding: 40px 15px;
+    min-height: auto;
+  }
+  
+  .bio-content {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  
+  .bio-name {
+    font-size: 2.5rem;
+  }
+  
+  .bio-field,
+  .bio-institution {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-name {
+    font-size: 2rem;
+  }
+  
+  .bio-field,
+  .bio-institution {
+    font-size: 1rem;
+  }
+}
