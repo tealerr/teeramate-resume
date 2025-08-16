@@ -53,7 +53,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   color: var(--text-color, #333);
-  margin-left: 15px;
 }
 
 .theme-toggle-btn:hover {
@@ -61,6 +60,35 @@
   border-color: var(--primary-color, #007bff);
   color: var(--primary-color, #007bff);
   transform: rotate(15deg);
+}
+
+/* Mobile theme button - always visible */
+.mobile-theme-btn {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Desktop theme button - hidden on mobile */
+.desktop-theme-btn {
+  margin-left: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .mobile-theme-btn {
+    order: 2;
+  }
+  
+  .navbar-toggler {
+    order: 3;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-theme-btn {
+    display: none !important;
+  }
 }
 
 /* Dark mode styles */

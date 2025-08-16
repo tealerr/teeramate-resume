@@ -53,7 +53,7 @@ const AboutMe: React.FC = () => {
             </p>
             {education?.degree && (
               <p className="bio-degree">
-                <strong>Degree:</strong> {education.degree} • {education.status}
+                <strong>Degree:</strong> {education.degree}
               </p>
             )}
           </div>
