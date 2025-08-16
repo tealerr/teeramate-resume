@@ -53,6 +53,12 @@ function TopNavbar() {
             >
               Experience
             </Nav.Link>
+            <Nav.Link
+              href="#contact"
+              onClick={(e) => handleSmoothScroll(e, "contact")}
+            >
+              Contact
+            </Nav.Link>
           </Nav>
           <Nav>
             <button

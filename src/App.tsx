@@ -6,6 +6,7 @@ import TopNavbar from "./components/Navbar";
 import AboutMe from "./components/Bio";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 import BackToTop from "./components/BackToTop";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <AboutMe />
           <Skills />
           <Experience />
+          <Contact />
         </main>
         <BackToTop />
       </div>
