@@ -14,11 +14,23 @@ const ProfileImage: React.FC<ProfileImageProps> = ({
   size = "large",
   className = "",
 }) => {
+  // Create proper URL with base path
+  const getImageUrl = (imagePath: string) => {
+    if (imagePath.startsWith("http") || imagePath.startsWith("data:")) {
+      return imagePath;
+    }
+    // Remove leading slash and add base URL
+    const cleanPath = imagePath.startsWith("/")
+      ? imagePath.slice(1)
+      : imagePath;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
+
   return (
     <div className={`profile-image-container ${size} ${className}`}>
       <div className="profile-image-wrapper">
         <img
-          src={src}
+          src={getImageUrl(src)}
           alt={alt}
           className="profile-image"
           onError={(e) => {
