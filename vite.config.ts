@@ -2,9 +2,16 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: '/teeramate-resume/', // Replace with your repository name
+  // Use base path only for build (production), not for dev server
+  base: command === 'build' ? '/teeramate-resume/' : '/',
+  server: {
+    // Force reload on changes
+    hmr: {
+      overlay: false
+    }
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -18,9 +25,5 @@ export default defineConfig({
         }
       }
     }
-  },
-  // Define process.env for production builds
-  define: {
-    'process.env.NODE_ENV': '"production"'
   }
-})
+}))
