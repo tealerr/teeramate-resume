@@ -1,1 +1,1 @@
-export * from './experienceModel.ts'
+export * from './experienceModel'
