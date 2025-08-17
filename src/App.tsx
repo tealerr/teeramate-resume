@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/global.css";
-import { ThemeProvider } from "./contexts/ThemeContext";
+import { ThemeProvider } from "./contexts";
 import TopNavbar from "./components/Navbar";
 import AboutMe from "./components/Bio";
 import Skills from "./components/Skills";

@@ -211,7 +211,7 @@
 @media (max-width: 768px) {
   .bio-section {
     padding: 40px 15px;
-    min-height: auto;
+    min-height: 0;
   }
   
   .bio-content {
